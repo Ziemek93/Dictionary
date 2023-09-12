@@ -1,0 +1,130 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card .border-box{
+    border: 1px solid #5bc0de;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.card div:first-child p{
+    margin-bottom: 10px;
+
+}
+.card div:first-child{
+    border-bottom: 1px solid #5bc0de;
+    font-size: 16px;
+
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+body{
+    position: static;
+}
+footer {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+}
+nav{
+     color: #fff;
+     margin-bottom: 30px;
+
+}
+nav a{
+    color: #000;
+    position: relative;
+
+
+}
+nav a:hover{
+    color: #000;
+}
+a{
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+}
+nav a::after {
+    position: absolute;
+    content: '';
+    left: calc(50% - 12.5px);
+    width: 25px;
+    height: 1px;
+    bottom: -3px;
+    visibility: hidden;
+    display: inline-block;
+    background-color: #000;
+
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+}
+nav a:hover::after{
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/* .sigle-input-group{
+    margin-bottom: 25px;
+} */
+.word{
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+    border:1px solid rgba(0,123,255,.5);
+    border-radius: 5px;
+    background: rgba(0,123,255,.5);
+    padding: 2.5px 10px;
+    color: #fff;
+}
+form{
+    margin-top: 15px;
+
+}
+.word:hover{
+    color: #000;
+    background-color: transparent;
+}
+.logout-form button{
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
+body nav{
+    height: 71px;
+}
+.card{
+    border: none;
+}
+.logout-form button:hover{
+    font-size: 1.1rem;
+    color: #ffc107;
+
+
+}
+/* @media (min-width:992px){
+
+    .to-end{
+        margin-left: auto;
+    }
+} */
