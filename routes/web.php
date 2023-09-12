@@ -61,7 +61,3 @@ Route::get('/login', [UserController::class, 'login'])->name('login')->middlewar
 // login user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 // ->name('login') - middleware/authenticate.php, getting redirect to login page except missing error
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
